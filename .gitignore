@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+**/dist/
+build/
+**/build/
+
+# Local secrets and environment configuration
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local personal transaction data (the server creates this file if missing)
+server/data/transactions.json
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
