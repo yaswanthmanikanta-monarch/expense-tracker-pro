@@ -140,13 +140,6 @@ server/data/transactions.json
 
 **Note:** JSON-file storage is suitable for a small student demo on one computer. It is not a replacement for a production database when multiple users or simultaneous writes are expected. If your lab specifically requires MySQL, use a MySQL-backed version instead.
 
-## GitHub upload and personal-data safety
-
-- `server/data/transactions.json` is included empty (`[]`) as safe sample data.
-- Real transaction records are local and should not be uploaded. The `.gitignore` excludes this local data file for Git-based workflows.
-- Do not upload `.env` files, passwords, API keys, or `node_modules` folders.
-- The server automatically creates `server/data/transactions.json` with an empty array if the file is missing.
-
 ## Windows PowerShell note
 
 If PowerShell blocks `npm.ps1` with an execution-policy message, use `npm.cmd` in the commands above instead (for example, `npm.cmd install` and `npm.cmd run dev`).
